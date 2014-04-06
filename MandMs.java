@@ -18,6 +18,11 @@ public class MandMs{
 		}
 	}
 
+	/**
+	 * @param n the number of m and ms to eat
+	 *
+	 * @return the least amount of mouthfuls to eat n m and ms 
+	 */
 	public static int numMouthfuls(int n){
 		if( n <=3 )
 			return n;
@@ -28,6 +33,11 @@ public class MandMs{
 	
 	}
 
+	/**
+	 * @param n the amount of m and ms to eat
+	 *
+	 * @return 1 if n is a prime number or the least amount possible left after a mouthful
+	 */
 	public static int rowSize(int n){
 		for(int i = 2; i < n; i++){
 			if(n % i == 0)
@@ -36,6 +46,11 @@ public class MandMs{
 		return -1;
 	}
 
+	/**
+	 * @param n a number 
+	 *
+	 * @return true if n is prime, false if it is composite
+	 */
 	public static boolean isPrime(int n){
 		if (n == 2 || PRIMES.contains(n))
 			return true;

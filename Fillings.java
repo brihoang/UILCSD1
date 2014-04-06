@@ -13,6 +13,7 @@ public class Fillings{
 			int b = in.nextInt();
 			int c = 1;
 
+			// calculate nPr(b, a)
 			for(int i = 0; i < a; i++){
 				c *= (b - i);
 			}

@@ -12,6 +12,7 @@ public class DNA{
 			String strand1 = in.nextLine().toUpperCase().trim();
 			String strand2 = in.nextLine().toUpperCase().trim();
 
+			//make sure lengths of strands are the same. 
 			if(strand1.length() != strand2.length()){
 				out.println("BAD");
 				continue;
@@ -22,6 +23,7 @@ public class DNA{
 				char c1 = strand1.charAt(i);
 				char c2 = strand2.charAt(i);
 
+				// make sure pairings are correct
 				if(!(c1 == 'A' && c2 == 'T' || c1 == 'T' && c2 == 'A' || c1 == 'C' && c2 == 'G' || c1 == 'G' && c2 == 'C')){
 					out.println("BAD");
 					good = false;
@@ -29,6 +31,7 @@ public class DNA{
 				}
 					
 			}
+
 			if(good)
 				out.println("GOOD");
 		}
